@@ -59,7 +59,6 @@ class BilMagasinetTVAddon(object):
             infoLabels['title'] = video['title']
             infoLabels['aired'] = video['publish_date_ansi'][0:10]
             infoLabels['year'] = int(video['publish_date_ansi'][0:4])
-            infoLabels['duration'] = video['video_length']
 
             item = xbmcgui.ListItem(video['title'], iconImage = BASE_URL + video['large_download'], thumbnailImage = BASE_URL + video['large_download'])
             item.setInfo('video', infoLabels)
